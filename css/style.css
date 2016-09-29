@@ -1,0 +1,122 @@
+body {
+	background-color: #DAE3E7;
+  color: #434343;
+  font-size: 16px;
+  line-height: 1.75em;
+  padding: 0 30px;
+}
+p {
+  line-height: 1.5;
+}
+.module {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  border-top: 10px solid #778492;
+  border-bottom: 10px solid #778492;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header-container {
+  padding: 30px 10px;
+  background: #f5f5f5;
+}
+.content-container {
+  background: #fff;
+  padding: 30px 40px;
+}
+.header-container .container {
+  max-width: 960px;
+}
+.profile-image {
+	margin-top: 20px;
+  margin-right: 30px;
+}
+.profile-title {
+  margin-right: 55px;
+}
+.profile-affiliation {
+}
+.profile-title .name {
+  color: #49515a;
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+.profile-title .desc {
+  color: #778492;
+  font-family: "Lato", arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.profile-title .social a {
+  background: #b0b7bf;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: #fff;
+  text-align: center;
+}
+.profile-title .social a:hover {
+  background: #778492;
+}
+.profile-title .social a .fa {
+  font-size: 20px;
+  padding-top: 8px;
+}
+.contact-list {
+	padding-top: 5px;
+}
+.contact-list .glyphicon {
+	margin-right: 8px;
+}
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
+.pubitem {
+  padding-bottom: 10px;
+}
+.footer {
+  padding-top: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+a.nodec {
+  color: #333333;
+  text-decoration:none
+}
+a.nodec:hover {
+  color:#4582ec;
+}
+@media (min-width: 768px) {
+  .dl-horizontal dt {
+    width: 120px;
+  }
+  .dl-horizontal dd {
+    margin-left: 140px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+  .content-container {
+    padding: 25px;
+  }
+}
