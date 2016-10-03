@@ -41,19 +41,19 @@
               text-align: left;
           }
 
-          .nav {background:#eee;}
+          nav#project {background:#eee;}
 
-          .nav ul {
+          nav#project ul {
               list-style-type: none;
            padding: 0;
           }
              
-          .nav ul a {
+          nav#project ul a {
            text-decoration: none;
           }
 
           @media all and (min-width: 768px) {
-              .nav#project {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+              nav#project {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
               .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
               footer {-webkit-order:3;order:3;}
           }
@@ -85,7 +85,7 @@
         </div>
         
       </div>
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default" id="mainnav">
         <div class="navbar-header">
           <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
             <span class="icon-bar"></span>
