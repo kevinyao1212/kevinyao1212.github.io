@@ -40,11 +40,16 @@
             text-decoration: none;
         }
 
-        article {
+        article#projectimg {
             margin-left: 170px;
             border-left: 0px solid gray;
             padding: 1em;
             overflow: hidden;
+        }
+            
+        .options {
+            position: relative;
+            right: 0px;        
         }
         </style>             
   </head>
@@ -68,7 +73,7 @@
               <ul class="list-unstyled contact-list">
                 <li><i class="glyphicon glyphicon-envelope"></i>boyao@ucsd.edu</li>
                 <li><i class="glyphicon glyphicon-earphone"></i>+1 (858) 281-3581</li>
-                <li><i class="glyphicon glyphicon-map-marker"></i>9155 Judicial Dr Apt. 5509</li>
+                <li><i class="glyphicon glyphicon-map-marker"></i>9155 Judicial Dr</li>
               </ul>
             </div>
         </div>
@@ -96,7 +101,7 @@
       <div class="content-container">
         <div>
           <p>
-            I am a student at UCSD, majoring in Computer Science and minoring in Mathematics. I am passionate about research that can benefit people's wellfare. Currently, I am working as a research project assistant at Qualcomm Institute. Our project team is focusing on using computer vision to predict people's fall risk based on their gait speed, sit-stand cycle time and ability to keep balance. I am really interested in Machine Learning and have been spending my spare time learning machine learning algorithms. I am also an experienced android developer who have built several projects.
+            I am a student at UCSD, majoring in Computer Science and minoring in Mathematics. I am passionate about research that can benefit people's welfare. Currently, I am working as a research project assistant at Qualcomm Institute. Our project team is focusing on using computer vision to predict people's fall risk based on their gait speed, sit-stand cycle time and ability to keep balance. I am really interested in Machine Learning and have been spending my spare time learning machine learning algorithms. I am also an experienced android developer who have built several projects.
 
           </p>
         </div>
@@ -135,7 +140,7 @@
               </ul>
             </nav>
 
-            <article>
+            <article id="projectimg">
                   <h3><a href="https://github.com/Estheroy/Gait-Image-Analysis">Dynamic Vision Sensor</a></h3>
                   <p>This is a research project I have been working on starting May. 2016. The goal of the project is to use computer vision as a tool to realize an automation process which can quantitatively measure one's gait speed, sit-stand cycle time and balance ability; those elements are crucial to predict a senior's risk to fall.
                   <p>Skills: Matlab, image processing</p>
@@ -148,7 +153,7 @@
               </ul>
             </nav>
 
-            <article>
+            <article id="projectimg">
                   <h3><a href="https://github.com/kevinyao1212/CoupleTones">CoupleTones</a></h3>
                   <p>This is an Android Application I built with 5 partners. Through CoupleTone users can login with your google accounts and add their friends as partner. Also, one can add their favorite locations in the app to notify their partners when they visit that location. User can also customize the tones based on their preferences.</p>
                   <p>Skills: java, Android Studio, JUnit, JIRA, Google Service API</p>
@@ -160,7 +165,7 @@
               </ul>
             </nav>
 
-            <article>
+            <article id="projectimg">
                   <h3><a href="https://github.com/kevinyao1212/my-2048">Game 2048 Implementation</a></h3>
                   <p>I implemented the popular game 2048 as a personal practice in java on PC platform. User is able to play the game just like the original version. Additionally, the size of the board can be specified by the user to make the game even more chanllenging</p>
                   <p>Skills: java, javafx, GUI</p>
@@ -184,7 +189,7 @@
               </ul>
             </nav>
 
-            <article>
+            <article id="projectimg">
                   <h3><a href="https://github.com/kevinyao1212/GrandPrIEEE">GrandPrIEEE</a></h3>
                   <p>This is an IEEE desgin competition design. Our goal is to build a automatic robot car which can trace the white line on the ground. My main task is to design the algorithm for it to accomplish the task as soon as possible</p>
                   <p>Skills: c\c++, 3D printing, circuit design, arduino</p>
@@ -197,7 +202,7 @@
               </ul>
             </nav>
 
-            <article>
+            <article id="projectimg">
                   <h3><a href="https://www.gopinv.com">GoPinv.com</a></h3>
                   <p>This is a start-up company and website I've built with some partners. The website is designed to be an online retailing store to sell Chinese snacks in USA. In the end, we sold the company to our major competitor: yami.com. <a href="https://www.gopinv.com">GoPinv.com</a></p>
                   <p>Skills: HTML, CSS, javaScript, negotiation and communication, leadership</p>
@@ -209,7 +214,7 @@
               </ul>
             </nav>
 
-            <article>
+            <article id="projectimg">
                   <h3>Arduino Robot Goalkeeper</h3>
                   <p>This is an automatic robot car which can play the role of a goal keeper in a soccer. With a sonor sensor, it can rotate its head to see if there is ball incoming and when it detects the ball coming, it will move forward to clear the ball out. I programmed the arduino robot in C to make it accomplish such goal.</p>
                   <p>Skills: C/C++, Algorithm design, arduino</p>
@@ -219,56 +224,18 @@
         </div>
         <div>
           <h2 id="Experience">Experience</h2>
-          <!-- <p>(<a href="pubs.html">Full publication list</a>)</p>
-          <dl class="dl-horizontal">
-            <dt class="conference"><b><a href="https://www.usenix.org/conference/osdi16" class="nodec">OSDI 2016</a></b></dt>
-            <dd class="pubitem">
-              <b>Early Detection of Configuration Errors to Reduce Failure Damage</b><br>
-              <a href="http://cseweb.ucsd.edu/~tixu/" class="nodec">Tianyin Xu</a>, <a href="http://cseweb.ucsd.edu/~x7jin/" class="nodec">Xinxin Jin</a>, <a href="http://ryanphuang.com" class="nodec">Peng Huang</a>, <a href="http://cseweb.ucsd.edu/~yyzhou" class="nodec">Yuanyuan Zhou</a>, <a href="http://people.cs.uchicago.edu/~shanlu/" class="nodec">Shan Lu</a>, Long Jin, Shankar Pasupathy<br>
-            </dd>
-            <dt class="conference"><b><a href="http://www.sigmobile.org/mobisys/2016/" class="nodec">MobiSys 2016</a></b></dt>
-            <dd class="pubitem">
-              <a target="_blank" href="paper/defdroid-mobisys16.pdf" onClick="ga('send', 'event', 'Downloads', 'defdroid-mobisys16.pdf', 'publication');"><b>DefDroid: Towards a More Defensive Mobile OS Against Disruptive App Behavior</b><br></a>
-              <a href="http://ryanphuang.com" class="nodec">Peng Huang</a>, <a href="http://cseweb.ucsd.edu/~tixu/" class="nodec">Tianyin Xu</a>, <a href="http://cseweb.ucsd.edu/~x7jin/" class="nodec">Xinxin Jin</a>, and <a href="http://cseweb.ucsd.edu/~yyzhou" class="nodec">Yuanyuan Zhou</a> <br>
-              <a target="_blank" href="paper/defdroid.bib" onClick="ga('send', 'event', 'Downloads', 'defdroid.bib', 'publication');">BibTeX</a> &nbsp;
-              <a target="_blank" href="talk/defdroid_talk.pdf" onClick="ga('send', 'event', 'Downloads', 'defdroid_talk.pdf', 'publication');">Slides</a> &nbsp;
-              <a target="_blank" href="https://youtu.be/lguUoitv80U" onClick="ga('send', 'pageview', 'defdroid/youtube');">Video</a> &nbsp;
-              <a target="_blank" href="http://defdroid.org" onClick="ga('send', 'pageview', 'defdroid.org');">Website</a>
-            </dd>
-            <dt class="conference"><b><a href="http://eurosys16.doc.ic.ac.uk" class="nodec">EuroSys 2016</a></b></dt>
-            <dd class="pubitem">
-              <a target="_blank" href="paper/nchecker-eurosys16.pdf" onClick="ga('send', 'event', 'Downloads', 'nchecker-eurosys16.pdf', 'publication');"><b>Saving Mobile App Developers from Network Disruptions</b></a><br>
-              <a href="http://cseweb.ucsd.edu/~x7jin/" class="nodec">Xinxin Jin</a>, <a href="http://ryanphuang.com" class="nodec">Peng Huang</a>, <a href="http://cseweb.ucsd.edu/~tixu/" class="nodec">Tianyin Xu</a>, and <a href="http://cseweb.ucsd.edu/~yyzhou" class="nodec">Yuanyuan Zhou</a> <br>
-              <a target="_blank" href="paper/nchecker.bib" onClick="ga('send', 'event', 'Downloads', 'nchecker.bib', 'publication');">BibTeX</a> &nbsp;
-            </dd>
-            <dt class="conference"><b><a href="http://eurosys2015.labri.fr" class="nodec">EuroSys 2015</a></b></dt>
-            <dd class="pubitem">
-              <a target="_blank" href="paper/confvalley-eurosys15.pdf" onClick="ga('send', 'event', 'Downloads', 'confvalley-eurosys15.pdf', 'publication');"><b>ConfValley: A Systematic Configuration Validation Framework for Cloud Services</b></a><br>
-              <a href="http://ryanphuang.com" class="nodec">Peng Huang</a>, Bill Bolosky, Abhishek Singh, and <a href="http://cseweb.ucsd.edu/~yyzhou" class="nodec">Yuanyuan Zhou</a> <br>
-              <a target="_blank" href="paper/confvalley.bib" onClick="ga('send', 'event', 'Downloads', 'confvalley.bib', 'publication');">BibTeX</a> &nbsp;
-              <a target="_blank" href="talk/confvalley_talk.pdf" onClick="ga('send', 'event', 'Downloads', 'confvalley_talk.pdf', 'publication');">Slides</a> &nbsp;
-              <a target="_blank" href="posters/confvalley_poster.pdf" onClick="ga('send', 'event', 'Downloads', 'confvalley_poster.pdf', 'publication');">Poster</a>
-            </dd>
-            <dt class="conference"><b><a href="https://www.usenix.org/conference/osdi14" class="nodec">OSDI 2014</a></b>*</dt>
-            <dd class="pubitem">
-              <b>Why Does a Cloud-Scale Service Fail Despite Fault-Tolerance?</b><br>
-              <a href="http://ryanphuang.com" class="nodec">Peng Huang</a>, <a href="http://cseweb.ucsd.edu/~x7jin/" class="nodec">Xinxin Jin</a>, Bill Bolosky, and <a href="http://cseweb.ucsd.edu/~yyzhou" class="nodec">Yuanyuan Zhou</a><br>
-              <p class="text-danger">*: Retracted for confidentiality reasons</p>
-            </dd>
-            <dt class="conference"><b><a href="http://2014.icse-conferences.org" class="nodec">ICSE 2014</a></b></dt>
-            <dd class="pubitem">
-              <a target="_blank" href="paper/perfscope-icse14.pdf" onClick="ga('send', 'event', 'Downloads', 'perfscope-icse14.pdf', 'publication');"><b>Performance Regression Testing Target Prioritization via Performance Risk Analysis</b></a><br>
-              <a href="http://ryanphuang.com" class="nodec">Peng Huang</a>, Xiao Ma, <a href="http://cseweb.ucsd.edu/~doshen" class="nodec">Dongcai Shen</a>, and <a href="http://cseweb.ucsd.edu/~yyzhou" class="nodec">Yuanyuan Zhou</a><br>
-              <a target="_blank" href="paper/perfscope.bib" onClick="ga('send', 'event', 'Downloads', 'perfscope.bib', 'publication');">BibTeX</a> &nbsp;
-              <a target="_blank" href="talk/perfscope_talk.pdf" onClick="ga('send', 'event', 'Downloads', 'perfscope_talk.pdf', 'publication');">Slides</a> &nbsp;
-              <a target="_blank" href="project/perfscope" onClick="ga('send', 'pageview', '/perfscope');">Software</a>
-            </dd>
-          </dl> -->
+          <ul style="list-style-type:circle">
+            <li><font size="4">Research Project Assistant @ Qualcomm Institute</font> <p class='options'><font face="verdana" color="gray">Feb. 2016 - Present</font></p></li>
+            <li><font size="4">Project Team Member @ IEEE UCSD Branch</font> <p class='options'><font face="verdana" color="gray">July. 2015 - Present</font></p></li>
+            <li><font size="4">Android Developer</font> <p class='options'><font face="verdana" color="gray">May. 2016 - Present</font></p></li>
+            <li><font size="4">Start-up co-founder @ GoPinv.com(sold), ai-master.com(in progress)</font> <p class='options'><font face="verdana" color="gray">Oct. 2015 - Present</font></p></li>
+            <p>(See my resume in the navigation bar on this page for details) b</p>
+            </ul>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <!-- <p>© Ryan (Peng) Huang 2016 | Inspired by <a href="http://themes.3rdwavemedia.com">Xiaoying Riley</a> | Last updated 08/26/2016.</p> -->
+      <p>© Bohan(Kevin) Yao 2016 | inspired by Ryan P.Huang.  Last updated 10/02/2016.</p>
     </footer>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
